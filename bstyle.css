@@ -1,0 +1,21 @@
+body{
+    background-color: wheat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;
+    height: 20px solid #ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+.blog{
+    margin-bottom: 20px;
+}
+.date{
+    color: #ffff;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600%;
+}

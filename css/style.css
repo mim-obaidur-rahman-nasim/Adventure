@@ -1,0 +1,306 @@
+@import url('../css/fonts.css');
+
+
+body{
+    margin:0;
+    box-sizing:border-box;
+    overflow-x:hidden;
+}
+
+:root{
+    /*Theme color*/
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffff;
+    --midnight:#104f55;
+    /*gradiant color*/
+    --sky:linear-gradiant(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*theme font family*/
+    --abel:'Abel',cursive;
+    --anton:'Anton',cursive;
+    --josefin:'Josefin',cursive;
+    --lexend:'Lexend',cursive;
+    --livvic:'Livvic',cursive;
+}
+
+a{
+    text-decoration: none;
+    color:var(--text-gray);
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-size: var(--lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--lexend);
+}
+
+h3{
+    font-family: var(--abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 20rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+.navi{
+    background:white;
+    padding:0 2rem;
+    height:0rem;
+    min-height:7vh;
+    overflow:hidden;
+    transition: height 1s ease-in-out;
+}
+
+.navi .nav-menu{
+    justify-content: space-between;
+}
+
+.navi .toggle-collapse{
+    position: absolute;
+    top:0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.navi .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.navi .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 230rem;
+}
+
+.navi .nav-items{
+    
+    display: flex;
+    margin: 0;
+}
+
+.navi .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--abel);
+    font-size: 1.1rem;
+}
+.navi .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+.navi .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.navi .nav-brand a{
+    font-size:1.6rem;
+    padding:1rem 0;
+    display: block;
+    font-family: var(--lexend);
+    font-size: 1.6rem;
+}
+
+.navi .social{
+    padding: 1.4rem 0;
+}
+
+.navi .social i{
+    padding: 0.2rem;
+}
+
+.navi .social i:hover{
+    color: #a1c4cf;
+}
+
+main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background-color: skyblue;
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.tom{
+    text-align: center;
+    color: black;
+    
+}
+
+/*carosel*/
+main .blog .container{
+    background: url('../assets/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+section{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h3{ 
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+h2{
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.blog-content{
+   /* display: flex; */
+    flex-direction: row;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 8rem;
+    box-shadow: 0 15px 20px rgba (0,0,0,0.2);
+}
+
+
+footer.footer{
+    height: 60%;
+    position: relative;
+    margin-top: 600px;
+    background-image: url(../assets/Background-image.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 210%;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color:white;
+}
+footer.footer .container p{
+    color:white;
+    text-align: center;
+}
+footer.footer .newsletter .form-element{
+    background: white;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    display: inline-block;
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
+footer.footer .follow div i{
+    color: var(--white);
+    padding: .4rem;
+    
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+footer.footer .rights h4{
+    color: white;
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px){
+   .navi .nav-menu, .navi .nav-items{
+       flex-direction: column;
+   } 
+   .navi .toggle-collapse{
+       display: initial;
+   }
+}
